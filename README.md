@@ -1,3 +1,3 @@
 # WeatherApp-u
 
-![screenshot of sample](unblvvv/WeatherApp/WeatherApp.png)
+![Image alt](https://github.com/unblvvv/WeatherApp/blob/master/WeatherApp.png)
