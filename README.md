@@ -1,3 +1,3 @@
 # WeatherApp-u
 
-![screenshot of sample](/WeatherApp/WeatherApp.png)
+![screenshot of sample](unblvvv/WeatherApp/WeatherApp.png)
