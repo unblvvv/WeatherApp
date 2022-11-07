@@ -1,0 +1,25 @@
+header {
+    background: url(../Images/img/Frame4.png);
+    height: 92px;
+}
+
+.header-con {
+    display: flex;
+    padding-top: 13px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+}
+
+.logo-box img {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.nav-box a {
+    margin-right: 20px;
+}

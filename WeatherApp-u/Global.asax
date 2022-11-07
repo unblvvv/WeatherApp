@@ -1,0 +1,1 @@
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="WeatherApp_u.MvcApplication" Language="C#" %>

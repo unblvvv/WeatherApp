@@ -1,0 +1,123 @@
+
+
+.cont {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.weather-box {
+    margin-top: 165px;
+    width: 450px;
+    height: 575px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(16px);
+    border-radius: 48px;
+}
+
+.box-weather {
+    padding-top: 50px;
+}
+
+.date-and-city {
+    display: flex;
+    margin-left: 35px;
+    align-items: center;
+}
+
+.photo-weather {
+    margin-right: 20px;
+}
+
+.city p {
+    font-weight: 600;
+}
+
+.date p {
+    font-size: 18px;
+}
+
+.temperature-pack {
+    display: flex;
+    width: 450px;
+    justify-content: center;
+}
+
+.weather-status {
+    width: 450px;
+    justify-content: center;
+    display: flex;
+}
+
+.temperature-text p {
+    font-weight: 300;
+    font-size: 144px;
+}
+
+.celsium p {
+    font-weight: 300;
+    font-size: 24px;
+    margin-top: 45px;
+}
+
+.more-info {
+    margin-left: 35px;
+    justify-content: center;
+}
+
+.weather-status p {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.first-box {
+    margin-bottom: 10px;
+}
+
+.first-box, .second-box {
+    display: flex;
+}
+
+.one, .two {
+    display: flex;
+    align-items: center;
+}
+
+.name-info p {
+    margin-right: 13px;
+}
+
+.one img, .two img {
+    margin-right: 3px;
+}
+
+.parametr-1, .line-info {
+    margin-right: 30px;
+}
+
+.param-spec {
+    margin-right: 49px;
+}
+
+.name-info p, .parametr-1 p, .parametr-2 p {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 450px) {
+    .weather-box {
+        width: 400px;
+        margin: 165px auto 95px auto;
+    }
+    .date-and-city {
+        margin-left: 20px;
+    }
+    .weather-status, .temperature-pack {
+        width: 400px;
+    }
+    .more-info {
+        margin-left: 20px;
+    }
+    .logo-box span {
+        display: none;
+    }
+}
+

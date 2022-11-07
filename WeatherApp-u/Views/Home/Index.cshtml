@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Content/Links.css">
+    <link rel="stylesheet" href="/Content/_footer.css">
+    <title>WeatherForecast</title>
+</head>
+<body>
+
+<!-- HEADERSTART -->
+
+<header>
+    <div class="container">
+        <div class="header-con">
+            <div class="logo-box">
+                <img src="/Images/icons/PartlyCloudy.svg">
+                <span>
+                    Weather
+                </span>
+            </div>
+                
+            <div class="nav-box">
+                <a href="https://github.com/unblvvv">GitHub</a>
+                <!-- <span>UA</span> -->
+                <!-- <span>EU</span> -->
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- MAINSTART -->
+
+<main>
+    <div class="cont">
+        <div class="weather-box">
+            <div class="box-weather">
+                <div class="date-and-city">
+                    <div class="photo-weather">
+                        @{
+                            if (@ViewData["Weather"].ToString() == "few clouds".ToLower())
+                            {
+                                <img src="/Images/icons/Few_Clouds.svg">
+                            }
+                            if (@ViewData["Weather"].ToString() == "scattered clouds".ToLower())
+                            {
+                                <img src="/Images/icons/Scattered_Clouds .svg">
+                            }
+                            if (@ViewData["Weather"].ToString() == "broken clouds".ToLower())
+                            {
+                                <img src="/Images/icons/Scattered_Clouds .svg">
+                            }
+                            if (@ViewData["Weather"].ToString() == "clear sky".ToLower())
+                            {
+                                <img src="/Images/icons/Sun_Weather.svg">
+                            }
+                            if (@ViewData["Weather"].ToString() == "shower rain".ToLower())
+                            {
+                                <img src="/Images/icons/Shower_Rain .svg">
+                            }
+                            if (@ViewData["Weather"].ToString() == "light rain".ToLower())
+                            {
+                                <img src="/Images/icons/Light_Rain.svg">
+                            }
+                            if (@ViewData["Weather"].ToString() == "rain".ToLower())
+                            {
+                                <img src="/Images/icons/Rain.svg">
+                            }
+                            if (@ViewData["Weather"].ToString() == "thunderstorm".ToLower())
+                            {
+                                <img src="/Images/icons/ThunderStorm.svg">
+                            }
+                            if (@ViewData["Weather"].ToString() == "snow".ToLower())
+                            {
+                                <img src="/Images/icons/Snow.svg">
+                            }
+                            if (@ViewData["Weather"].ToString() == "mist".ToLower())
+                            {
+                                <img src="/Images/icons/Mist.svg">
+                            }
+                            if (@ViewData["Weather"].ToString() == "overcast clouds".ToLower())
+                            {
+                                <img src="/Images/icons/Overcast_Clouds.svg">
+                            }   
+                        }
+                    </div>
+                    <div class="city-date-con">
+                        <div class="city">
+                            <p>
+                                @ViewData["Name"]
+                            </p>
+                        </div>
+                        <div class="date">
+                            @{
+                                DateTime now = DateTime.Now;
+                                <p>
+                                    @now.ToString("D", System.Globalization.CultureInfo.CreateSpecificCulture("en-EN"))
+                                </p>   
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="temperature">
+                    <div class="temperature-pack">
+                        <div class="temperature-text">
+                            <p>
+                                @ViewData["Temperature"]
+                            </p>
+                        </div>
+                        <div class="celsium">
+                            <p>C</p>
+                        </div>
+                    </div>
+                    <div class="weather-status">
+                        <p>
+                            @ViewData["Weather"]
+                        </p>
+                    </div>
+                </div>
+                <div class="more-info">
+                    <div class="info-up">
+                        <div class="first-box">
+                            <div class="one">
+                                <img src="/Images/icons/visibility.svg">
+                                <div class="name-info">
+                                    <p>
+                                        Visibility
+                                    </p>
+                                </div>
+                                <div class="parametr-1">
+                                    <p>
+                                        10000
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="line-info">
+                                <img src="/Images/icons/line-info.svg">
+                            </div>
+                            <div class="two">
+                                <img src="/Images/icons/temperature.svg">
+                                <div class="name-info">
+                                    <p>
+                                        Feelslike
+                                    </p>
+                                </div>
+                                <div class="parametr-2">
+                                    <p>
+                                        @ViewData["FeelsLike"]
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-down">
+                        <div class="second-box">
+                            <div class="one">
+                                <img src="/Images/icons/water.svg">
+                                <div class="name-info">
+                                    <p>
+                                        Humidity
+                                    </p>
+                                </div>
+                                <div class="parametr-1 param-spec">
+                                    <p>
+                                        @ViewData["Humidity"]
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="line-info">
+                                <img src="/Images/icons/line-info.svg">
+                            </div>
+                            <div class="two">
+                                <img src="/Images/icons/windy.svg">
+                                <div class="name-info">
+                                    <p>
+                                        Wind
+                                    </p>
+                                </div>
+                                <div class="parametr-2">
+                                    <p>
+                                        @ViewData["Wind"]
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+</main>
+
+    <!-- FOOTER -->
+
+<footer>
+    <div class="footer-cont">
+        <p>
+            Made by unblv
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
